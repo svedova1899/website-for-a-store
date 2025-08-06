@@ -1,0 +1,404 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Футболка (синя)",
+      "price": 1177,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Синя футболка з бавовна."
+    },
+    {
+      "id": 2,
+      "name": "Кросівки високі (червона)",
+      "price": 1486,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Червона кросівки високі з еко-шкіра."
+    },
+    {
+      "id": 3,
+      "name": "Футболка з принтом (біла)",
+      "price": 808,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Біла футболка з принтом з поліестер."
+    },
+    {
+      "id": 4,
+      "name": "Футболка oversize (біла)",
+      "price": 639,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Біла футболка oversize з бавовна."
+    },
+    {
+      "id": 5,
+      "name": "Бавовняна футболка (бежева)",
+      "price": 899,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Бежева бавовняна футболка з бавовна."
+    },
+    {
+      "id": 6,
+      "name": "Футболка (сіра)",
+      "price": 440,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Сіра футболка з еко-шкіра."
+    },
+    {
+      "id": 7,
+      "name": "Класичні штани (сіра)",
+      "price": 1302,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Сіра класичні штани з поліестер."
+    },
+    {
+      "id": 8,
+      "name": "Бавовняна футболка (біла)",
+      "price": 518,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Біла бавовняна футболка з вовна."
+    },
+    {
+      "id": 9,
+      "name": "Кросівки високі (жовта)",
+      "price": 959,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Жовта кросівки високі з льон."
+    },
+    {
+      "id": 10,
+      "name": "Кросівки високі (зелена)",
+      "price": 404,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Зелена кросівки високі з вовна."
+    },
+    {
+      "id": 11,
+      "name": "Білі кросівки (жовта)",
+      "price": 378,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Жовта білі кросівки з льон."
+    },
+    {
+      "id": 12,
+      "name": "Кросівки (чорна)",
+      "price": 1455,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Чорна кросівки з льон."
+    },
+    {
+      "id": 13,
+      "name": "Майка спортивна (сіра)",
+      "price": 1149,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Сіра майка спортивна з льон."
+    },
+    {
+      "id": 14,
+      "name": "Штани джинсові (червона)",
+      "price": 515,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Червона штани джинсові з льон."
+    },
+    {
+      "id": 15,
+      "name": "Майка спортивна (сіра)",
+      "price": 1331,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Сіра майка спортивна з поліестер."
+    },
+    {
+      "id": 16,
+      "name": "Майка спортивна (бежева)",
+      "price": 703,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Бежева майка спортивна з вовна."
+    },
+    {
+      "id": 17,
+      "name": "Майка спортивна (жовта)",
+      "price": 467,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Жовта майка спортивна з льон."
+    },
+    {
+      "id": 18,
+      "name": "Класичні штани (червона)",
+      "price": 1146,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Червона класичні штани з льон."
+    },
+    {
+      "id": 19,
+      "name": "Білі кросівки (синя)",
+      "price": 665,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Синя білі кросівки з льон."
+    },
+    {
+      "id": 20,
+      "name": "Бавовняна майка (чорна)",
+      "price": 651,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Чорна бавовняна майка з вовна."
+    },
+    {
+      "id": 21,
+      "name": "Штани джинсові (синя)",
+      "price": 518,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Синя штани джинсові з еко-шкіра."
+    },
+    {
+      "id": 22,
+      "name": "Білі кросівки (бежева)",
+      "price": 1455,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Бежева білі кросівки з вовна."
+    },
+    {
+      "id": 23,
+      "name": "Білі кросівки (червона)",
+      "price": 862,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Червона білі кросівки з льон."
+    },
+    {
+      "id": 24,
+      "name": "Кросівки високі (жовта)",
+      "price": 435,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Жовта кросівки високі з бавовна."
+    },
+    {
+      "id": 25,
+      "name": "Бавовняна футболка (чорна)",
+      "price": 549,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Чорна бавовняна футболка з поліестер."
+    },
+    {
+      "id": 26,
+      "name": "Футболка (біла)",
+      "price": 337,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Біла футболка з поліестер."
+    },
+    {
+      "id": 27,
+      "name": "Футболка з принтом (синя)",
+      "price": 894,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Синя футболка з принтом з бавовна."
+    },
+    {
+      "id": 28,
+      "name": "Майка на бретелях (синя)",
+      "price": 956,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Синя майка на бретелях з поліестер."
+    },
+    {
+      "id": 29,
+      "name": "Бавовняна футболка (бежева)",
+      "price": 960,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Бежева бавовняна футболка з поліестер."
+    },
+    {
+      "id": 30,
+      "name": "Штани джинсові (зелена)",
+      "price": 1114,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Зелена штани джинсові з поліестер."
+    },
+    {
+      "id": 31,
+      "name": "Штани-карго (сіра)",
+      "price": 1201,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Сіра штани-карго з льон."
+    },
+    {
+      "id": 32,
+      "name": "Білі кросівки (червона)",
+      "price": 1337,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Червона білі кросівки з поліестер."
+    },
+    {
+      "id": 33,
+      "name": "Майка (зелена)",
+      "price": 341,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Зелена майка з бавовна."
+    },
+    {
+      "id": 34,
+      "name": "Кросівки високі (бежева)",
+      "price": 625,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Бежева кросівки високі з льон."
+    },
+    {
+      "id": 35,
+      "name": "Штани-карго (біла)",
+      "price": 790,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Біла штани-карго з еко-шкіра."
+    },
+    {
+      "id": 36,
+      "name": "Спортивні штани (чорна)",
+      "price": 313,
+      "image": "img/pants.jpg",
+      "category": "штани",
+      "description": "Чорна спортивні штани з вовна."
+    },
+    {
+      "id": 37,
+      "name": "Майка (чорна)",
+      "price": 787,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Чорна майка з вовна."
+    },
+    {
+      "id": 38,
+      "name": "Кросівки високі (червона)",
+      "price": 694,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Червона кросівки високі з вовна."
+    },
+    {
+      "id": 39,
+      "name": "Майка спортивна (червона)",
+      "price": 922,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Червона майка спортивна з вовна."
+    },
+    {
+      "id": 40,
+      "name": "Кросівки високі (сіра)",
+      "price": 1254,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Сіра кросівки високі з поліестер."
+    },
+    {
+      "id": 41,
+      "name": "Кросівки (жовта)",
+      "price": 1050,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Жовта кросівки з льон."
+    },
+    {
+      "id": 42,
+      "name": "Кросівки для бігу (біла)",
+      "price": 537,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Біла кросівки для бігу з вовна."
+    },
+    {
+      "id": 43,
+      "name": "Білі кросівки (синя)",
+      "price": 773,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Синя білі кросівки з бавовна."
+    },
+    {
+      "id": 44,
+      "name": "Бавовняна футболка (зелена)",
+      "price": 1440,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Зелена бавовняна футболка з вовна."
+    },
+    {
+      "id": 45,
+      "name": "Футболка з принтом (чорна)",
+      "price": 641,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Чорна футболка з принтом з еко-шкіра."
+    },
+    {
+      "id": 46,
+      "name": "Бавовняна футболка (жовта)",
+      "price": 743,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Жовта бавовняна футболка з вовна."
+    },
+    {
+      "id": 47,
+      "name": "Кросівки для бігу (сіра)",
+      "price": 1313,
+      "image": "img/sneakers.jpg",
+      "category": "кросівки",
+      "description": "Сіра кросівки для бігу з вовна."
+    },
+    {
+      "id": 48,
+      "name": "Футболка (зелена)",
+      "price": 383,
+      "image": "img/shirt.jpg",
+      "category": "футболка",
+      "description": "Зелена футболка з льон."
+    },
+    {
+      "id": 49,
+      "name": "Бавовняна майка (біла)",
+      "price": 511,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Біла бавовняна майка з бавовна."
+    },
+    {
+      "id": 50,
+      "name": "Майка на бретелях (сіра)",
+      "price": 419,
+      "image": "img/tanktop.jpg",
+      "category": "майка",
+      "description": "Сіра майка на бретелях з льон."
+    }
+  ]
+}

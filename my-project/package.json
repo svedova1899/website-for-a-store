@@ -59,7 +59,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
         "start": "npx parcel index.html",
-    "server": "json-server --watch products.json --port 3000"
+   "server": "json-server --watch db/products.json --port 3000"
   },
   "keywords": [],
   "author": "",

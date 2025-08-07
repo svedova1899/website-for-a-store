@@ -1,16 +1,29 @@
-fetch('http://localhost:3000/products').then((res)=>res.json()).then((data)=>{
+let currentPage = 1;
+const limit = 6;
+fetch('http://localhost:3000/products?_page=${page}&_limit=${limit}').then((res)=>{
+    if (!res.ok) throw new error("\u041F\u043E\u043C\u0438\u043B\u043A\u0430 \u043F\u0440\u0438 \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0435\u043D\u043D\u0456 \u0442\u043E\u0432\u0430\u0440\u0456\u0432");
+    totalCount = res.headers.get('X-Total-Count');
+    return res.json();
+}).then((data)=>{
     renderProducts(data);
+    renderPagination();
+}).catch((error1)=>{
+    console.error("\u041F\u043E\u043C\u0438\u043B\u043A\u0430:", error1);
 });
 function renderProducts(products) {
-    const container = document.querySelector('.product-list');
-    container.innerHTML = products.map((product)=>`
-    <div class="card">
-      <img src="${product.image}" alt="${product.name}" />
-      <h3>${product.name}</h3>
-      <p>${product.price} \u{433}\u{440}\u{43D}</p>
-      <button data-id="${product.id}">\u{41A}\u{443}\u{43F}\u{438}\u{442}\u{438}</button>
-    </div>
-  `).join('');
+    const container = document.querySelector('.products-div');
+    container.innerHTML = "";
+    products.forEach((product)=>{
+        const item = document.createElement('div');
+        item.classList.add('product-item');
+        item.innerHTML = `
+    <img src="${product.image}" alt="${product.name}" class="product-img">
+      <h3 class="product-title">${product.name}</h3>
+      <p class="product-description">${product.description}</p>
+      <p class="product-price">${product.price} UAH</p>
+      `;
+        container.appendChild(item);
+    });
 }
 
 //# sourceMappingURL=my-project.579125c3.js.map

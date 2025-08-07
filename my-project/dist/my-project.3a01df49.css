@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.products-div {
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 820px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.product-item {
+  border: 2px solid #000;
+  width: 400px;
+}
+
+.product-title {
+  color: #333;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.product-description {
+  color: #999;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+.product-price {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=my-project.3a01df49.css.map */

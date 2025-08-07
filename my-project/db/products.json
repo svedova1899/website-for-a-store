@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Футболка (синя)",
       "price": 1177,
-      "image": "img/shirt.jpg",
+      "image": "./src/components/img/blue-tshirt.png",
       "category": "футболка",
       "description": "Синя футболка з бавовна."
     },

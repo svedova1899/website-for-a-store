@@ -55,4 +55,11 @@ button {
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
+
+.load-more {
+  color: #333;
+  background-color: #e49dda;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+}
 /*# sourceMappingURL=my-project.3a01df49.css.map */

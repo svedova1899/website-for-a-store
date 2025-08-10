@@ -53,3 +53,10 @@ button {
     font-family: "Roboto", sans-serif;
      font-weight: 500;
 }
+.load-more{
+ margin: 0 auto;
+ background-color: rgb(228, 157, 218);
+ color: #333333;
+ padding: 10px 20px;
+ margin-top: 15px;
+}

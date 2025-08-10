@@ -14,10 +14,22 @@
 </head>
 
 <body>
-    <div class="products-div">
-    </div>
-    <button class="load-more">Показати ще</button>
-    <script src="./src/index.js"></script>
+      <header>
+    <input id="search" type="search" placeholder="Пошук товарів..." />
+  </header>
+    <main>
+        <div class="products-div"></div>
+
+        <div id="spinner" class="spinner hidden" aria-hidden="true">
+            <div class="spinner-circle"></div>
+        </div>
+
+        <div class="controls">
+            <button class="load-more">Показати ще</button>
+        </div>
+
+    </main>
+    <script type="module" src="./src/index.js"></script>
 </body>
 
 </html>

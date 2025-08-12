@@ -678,6 +678,7 @@ const container = document.querySelector('.products-div');
 const btn = document.querySelector('.load-more');
 const spinner = document.querySelector('.spinner');
 const searchInput = document.getElementById('search');
+const clockEl = document.getElementById('clock');
 function showSpinner() {
     spinner.classList.remove('hidden');
     spinner.setAttribute('aria-hidden', 'false');
@@ -723,6 +724,42 @@ function renderProducts(products) {
         container.appendChild(item);
     });
 }
+function updateClock() {
+    const days = [
+        "\u043D\u0435\u0434\u0456\u043B\u044F",
+        "\u043F\u043E\u043D\u0435\u0434\u0456\u043B\u043E\u043A",
+        "\u0432\u0456\u0432\u0442\u043E\u0440\u043E\u043A",
+        "\u0441\u0435\u0440\u0435\u0434\u0430",
+        "\u0447\u0435\u0442\u0432\u0435\u0440",
+        "\u043F\u2019\u044F\u0442\u043D\u0438\u0446\u044F",
+        "\u0441\u0443\u0431\u043E\u0442\u0430"
+    ];
+    const months = [
+        "\u0441\u0456\u0447\u043D\u044F",
+        "\u043B\u044E\u0442\u043E\u0433\u043E",
+        "\u0431\u0435\u0440\u0435\u0437\u043D\u044F",
+        "\u043A\u0432\u0456\u0442\u043D\u044F",
+        "\u0442\u0440\u0430\u0432\u043D\u044F",
+        "\u0447\u0435\u0440\u0432\u043D\u044F",
+        "\u043B\u0438\u043F\u043D\u044F",
+        "\u0441\u0435\u0440\u043F\u043D\u044F",
+        "\u0432\u0435\u0440\u0435\u0441\u043D\u044F",
+        "\u0436\u043E\u0432\u0442\u043D\u044F",
+        "\u043B\u0438\u0441\u0442\u043E\u043F\u0430\u0434\u0430",
+        "\u0433\u0440\u0443\u0434\u043D\u044F"
+    ];
+    const now = new Date();
+    const dayName = days[now.getDay()];
+    const day = now.getDate();
+    const monthName = months[now.getMonth()];
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    if (hours < 10) hours = '0' + hours;
+    if (minutes < 10) minutes = '0' + minutes;
+    const formattedTime = `${dayName} ${day} ${monthName} ${hours}:${minutes}`;
+    clockEl.textContent = formattedTime;
+}
+setInterval(updateClock, 60000);
 function checkButtonVisibility() {
     const totalPages = Math.ceil(totalCount / limit);
     if (currentPage >= totalPages) btn.style.display = 'block';
@@ -741,6 +778,7 @@ const onSearch = (0, _debounceDefault.default)((e)=>{
 }, 450);
 searchInput.addEventListener('input', onSearch);
 loadProducts();
+updateClock();
 
 },{"lodash/debounce":"6vflm","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6vflm":[function(require,module,exports,__globalThis) {
 var isObject = require("3b174a999d6a40ac"), now = require("575b2317167ce20d"), toNumber = require("a13332670c5c0f63");

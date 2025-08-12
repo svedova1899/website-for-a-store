@@ -9,6 +9,7 @@ let currentQuery = '';
    const btn = document.querySelector('.load-more');
 const spinner = document.querySelector('.spinner');
 const searchInput = document.getElementById('search');
+  const clockEl = document.getElementById('clock');
 
 function showSpinner(){
   spinner.classList.remove('hidden');
@@ -71,6 +72,34 @@ function renderProducts(products) {
   });
 }
 
+function updateClock() {
+  
+  const days = [
+    'неділя', 'понеділок', 'вівторок', 'середа',
+    'четвер', 'п’ятниця', 'субота'
+  ];
+  const months = [
+    'січня', 'лютого', 'березня', 'квітня',
+    'травня', 'червня', 'липня', 'серпня',
+    'вересня', 'жовтня', 'листопада', 'грудня'
+  ];
+
+  const now = new Date();
+  const dayName = days[now.getDay()];
+  const day = now.getDate();
+  const monthName = months[now.getMonth()];
+  
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+    if (hours < 10) hours = '0' + hours;
+  if (minutes < 10) minutes = '0' + minutes;
+
+  const formattedTime = `${dayName} ${day} ${monthName} ${hours}:${minutes}`;
+  clockEl.textContent = formattedTime;
+}
+setInterval(updateClock, 1000 * 60);
+
+
 function checkButtonVisibility() {
   const totalPages = Math.ceil(totalCount / limit);
   if (currentPage >= totalPages) {
@@ -95,4 +124,5 @@ searchInput.addEventListener('input', onSearch);
 
 loadProducts();
 
+updateClock();
 

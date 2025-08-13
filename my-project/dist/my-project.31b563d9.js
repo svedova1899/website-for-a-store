@@ -720,9 +720,24 @@ function renderProducts(products) {
       <h3 class="product-title">${product.name}</h3>
       <p class="product-description">${product.description}</p>
       <p class="product-price">${product.price} UAH</p>
+      <button class="fav-btn" data-id="${product.id}">\u{414}\u{43E}\u{434}\u{430}\u{442}\u{438} \u{443} \u{43A}\u{43E}\u{448}\u{438}\u{43A}</button>
     `;
         container.appendChild(item);
     });
+    document.querySelectorAll('.fav-btn').forEach((btn)=>{
+        btn.addEventListener('click', ()=>{
+            const id = btn.dataset.id;
+            addToFavorites(id);
+        });
+    });
+}
+function addToFavorites(productId) {
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    if (!favorites.includes(productId)) {
+        favorites.push(productId);
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+        alert("\u0422\u043E\u0432\u0430\u0440 \u0434\u043E\u0434\u0430\u043D\u043E \u0443 \u0432\u0438\u0431\u0440\u0430\u043D\u0435!");
+    } else alert("\u0426\u0435\u0439 \u0442\u043E\u0432\u0430\u0440 \u0432\u0436\u0435 \u0443 \u0432\u0438\u0431\u0440\u0430\u043D\u043E\u043C\u0443");
 }
 function updateClock() {
     const days = [

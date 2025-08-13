@@ -67,9 +67,30 @@ function renderProducts(products) {
       <h3 class="product-title">${product.name}</h3>
       <p class="product-description">${product.description}</p>
       <p class="product-price">${product.price} UAH</p>
+      <button class="fav-btn" data-id="${product.id}">Додати у кошик</button>
     `;
     container.appendChild(item);
   });
+
+    document.querySelectorAll('.fav-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      addToFavorites(id);
+    });
+  });
+
+}
+
+function addToFavorites(productId) {
+  let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+  if (!favorites.includes(productId)) {
+    favorites.push(productId);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    alert('Товар додано у вибране!');
+  } else {
+    alert('Цей товар вже у вибраному');
+  }
 }
 
 function updateClock() {
